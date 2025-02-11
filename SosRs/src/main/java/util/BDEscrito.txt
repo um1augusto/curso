@@ -1,0 +1,19 @@
+CREATE DATABASE SosRs;
+
+CREATE TABLE doencas(
+id_doencas INT AUTO_INCREMENT PRIMARY KEY,
+doenca VARCHAR (40)
+);
+
+CREATE TABLE sintomas(
+id_sintomas INT AUTO_INCREMENT PRIMARY KEY,
+sintoma VARCHAR (40)
+);
+
+CREATE TABLE doenca_sintoma(
+id INT AUTO_INCREMENT PRIMARY KEY,
+id_doenca INT, 
+id_sintoma INT,
+FOREIGN KEY (id_doenca) REFERENCES doencas(id_doencas),
+FOREIGN KEY (id_sintoma) REFERENCES sintomas(id_sintomas)
+);
