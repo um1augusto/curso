@@ -1,0 +1,30 @@
+{
+  "name": "orientacaoobjetos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "index": "npx tsc index.ts && node index.js",
+    "index2": "npx tsc index2.ts && node index2",
+    "tarefa1Magica": "node tarefa1Magica",
+    "tarefa2Magica": "node tarefa2Magica",
+    "ttarefa1MagicaCase": "npx tsc ttarefa1MagicaCase.ts && node ttarefa1MagicaCase.js",
+    "ttarefa2MagicaCase": "npx tsc ttarefa2MagicaCase.ts && node ttarefa2MagicaCase.js",
+    "ttarefaAjuste1Magica": "npx tsc ttarefaAjuste1Magica.ts && node ttarefaAjuste1Magica.js",
+    "ttarefaAjuste2Magica": "npx tsc ttarefaAjuste2Magica.ts && node ttarefaAjuste2Magica.js",
+    "ttarefaAjuste3Magica": "npx tsc ttarefaAjuste3Magica.ts && node ttarefaAjuste3Magica.js",
+    "interface1Primeiro": "npx tsc interface1Primeiro.ts && node interface1Primeiro.js",
+    "interface2Primeiro": "npx tsc interface2Primeiro.ts && node interface2Primeiro.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.3.3",
+    "@types/readline-sync": "^1.4.4",
+    "readline": "^1.3.0",
+    "readline-sync": "^1.4.10",
+    "save-dev": "^0.0.1-security",
+    "typescript": "^5.2.2"
+  }
+}

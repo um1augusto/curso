@@ -1,0 +1,81 @@
+package orientacaoobjetointerfacejava;
+
+public class ClasseRadio implements InterfaceRadio {
+    private int volume;
+    private boolean ligado;
+    private double estacao;
+    private String banda;
+
+    public ClasseRadio(int volume, boolean ligado, double estacao, String banda) {
+        this.volume = volume;
+        this.ligado = ligado;
+        this.estacao = estacao;
+        this.banda = banda;
+    }
+    public int getVolume() {
+        return volume;
+    }
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
+    public boolean isLigado() {
+        return ligado;
+    }
+    public void setLigado(boolean ligado) {
+        this.ligado = ligado;
+    }
+    public double getEstacao() {
+        return estacao;
+    }
+    public void setEstacao(double estacao) {
+        this.estacao = estacao;
+    }
+    public String getBanda() {
+        return banda;
+    }
+    public void setBanda(String banda) {
+        this.banda = banda;
+    }
+    public void play() {
+        System.out.println("Reproduzindo música.");
+    }
+    public void pause() {
+        System.out.println("Música pausada.");
+    }
+    public void aumentaVolume() {
+        if (volume < 50) {
+            volume += 5;
+            System.out.println("Volume aumentado para " + volume);
+        } else {
+            System.out.println("Volume máximo alcançado.");
+        }
+    }
+    public void diminuiVolume() {
+        if (volume > 0) {
+            volume -= 5;
+            System.out.println("Volume diminuído para " + volume);
+        } else {
+            System.out.println("Volume mínimo alcançado.");
+        }
+    }
+    public void dialAumenta() {
+        System.out.println("Sintonizando para a próxima estação.");
+    }
+    public void dialDiminui() {
+        System.out.println("Sintonizando para a estação anterior.");
+    }
+    public void trocaFaixa() {
+        System.out.println("Faixa de frequência alterada para " + banda + " " + estacao);
+    }
+    public void apresentaInfo() {
+        System.out.println("Estado do Rádio: " + (ligado ? "Ligado" : "Desligado"));
+        System.out.println("Faixa de Frequência: " + banda);
+        System.out.println("Estação Sintonizada: " + estacao);
+        System.out.println("Volume do Rádio: " + volume);
+    }
+}
+
+
+
+
+
